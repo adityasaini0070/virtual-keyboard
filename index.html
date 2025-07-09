@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Virtual Keyboard - Full-Fledged Edition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⌨️</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>🎹 Virtual Keyboard Pro</h1>
+            <p>Full-featured virtual keyboard with multiple layouts, themes, and advanced features</p>
+        </header>
+
+        <main class="app-main">
+            <div class="controls-panel">
+                <div class="control-group">
+                    <label for="layout-select">Keyboard Layout:</label>
+                    <select id="layout-select">
+                        <option value="qwerty">QWERTY</option>
+                        <option value="dvorak">Dvorak</option>
+                        <option value="colemak">Colemak</option>
+                        <option value="numeric">Numeric</option>
+                        <option value="symbols">Symbols</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <label for="theme-select">Theme:</label>
+                    <select id="theme-select">
+                        <option value="default">Default</option>
+                        <option value="dark">Dark Mode</option>
+                        <option value="neon">Neon</option>
+                        <option value="retro">Retro</option>
+                        <option value="minimal">Minimal</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="sound-toggle">
+                        <span class="checkmark"></span>
+                        Sound Effects
+                    </label>
+                </div>
+
+                <div class="control-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="vibration-toggle">
+                        <span class="checkmark"></span>
+                        Vibration (Mobile)
+                    </label>
+                </div>
+
+                <div class="control-group">
+                    <button id="reset-btn" class="control-btn">Reset Settings</button>
+                </div>
+            </div>
+
+            <div class="input-section">
+                <div class="input-group">
+                    <label for="main-input">Type here:</label>
+                    <textarea 
+                        id="main-input" 
+                        class="use-keyboard-input" 
+                        placeholder="Click here to start typing with the virtual keyboard..."
+                        rows="8"
+                    ></textarea>
+                </div>
+
+                <div class="input-actions">
+                    <button id="clear-btn" class="action-btn">Clear</button>
+                    <button id="copy-btn" class="action-btn">Copy</button>
+                    <button id="paste-btn" class="action-btn">Paste</button>
+                    <button id="toggle-keyboard-btn" class="action-btn primary">Toggle Keyboard</button>
+                </div>
+            </div>
+
+            <div class="stats-section">
+                <div class="stat-item">
+                    <span class="stat-label">Characters:</span>
+                    <span id="char-count">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Words:</span>
+                    <span id="word-count">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Lines:</span>
+                    <span id="line-count">1</span>
+                </div>
+            </div>
+        </main>
+
+        <footer class="app-footer">
+            <p>&copy; 2025 Virtual Keyboard Pro - Enhanced Edition</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
