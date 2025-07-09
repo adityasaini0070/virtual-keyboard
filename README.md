@@ -1,4 +1,4 @@
-# 🎹 Virtual Keyboard Pro - Enhanced Edition
+# 🎹 Virtual Keyboard
 
 A full-fledged, feature-rich virtual keyboard web application with multiple layouts, themes, and advanced functionality.
 
